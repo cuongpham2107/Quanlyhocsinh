@@ -63,5 +63,15 @@ namespace Quanlyhocsinh
             OpenForm(typeof(formGiaoVien));
 
         }
+
+        private void mnChucVu_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            OpenForm(typeof(formChucVu));
+        }
+
+        private void mnTrinhDo_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            OpenForm(typeof(formTrinhDo));
+        }
     }
 }

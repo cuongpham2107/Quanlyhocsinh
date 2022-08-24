@@ -251,7 +251,7 @@
             0,
             0,
             0});
-            this.spinHeSo.Location = new System.Drawing.Point(717, 40);
+            this.spinHeSo.Location = new System.Drawing.Point(666, 47);
             this.spinHeSo.MenuManager = this.barManager1;
             this.spinHeSo.Name = "spinHeSo";
             this.spinHeSo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -268,7 +268,7 @@
             0,
             0,
             0});
-            this.spinSoTiet.Location = new System.Drawing.Point(527, 40);
+            this.spinSoTiet.Location = new System.Drawing.Point(476, 47);
             this.spinSoTiet.MenuManager = this.barManager1;
             this.spinSoTiet.Name = "spinSoTiet";
             this.spinSoTiet.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -280,7 +280,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(679, 43);
+            this.labelControl3.Location = new System.Drawing.Point(628, 50);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(32, 16);
             this.labelControl3.TabIndex = 3;
@@ -288,7 +288,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(484, 43);
+            this.labelControl2.Location = new System.Drawing.Point(433, 50);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(37, 16);
             this.labelControl2.TabIndex = 2;
@@ -296,14 +296,14 @@
             // 
             // txtTenMH
             // 
-            this.txtTenMH.Location = new System.Drawing.Point(156, 40);
+            this.txtTenMH.Location = new System.Drawing.Point(105, 47);
             this.txtTenMH.Name = "txtTenMH";
             this.txtTenMH.Size = new System.Drawing.Size(280, 23);
             this.txtTenMH.TabIndex = 1;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(75, 43);
+            this.labelControl1.Location = new System.Drawing.Point(24, 50);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(75, 16);
             this.labelControl1.TabIndex = 0;

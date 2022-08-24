@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Quanlyhocsinh.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Quanlyhocsinh.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Quanlyhocsinh" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -42,26 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BussinessLayer.dll" size="15360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BussinessLayer.dll" size="16896">
       <assemblyIdentity name="BussinessLayer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>q/hh3c0FghqbI8Nebig9RT7HoRcS/8R/d1yy03wv0h0=</dsig:DigestValue>
+        <dsig:DigestValue>Bkl1e5Ji43U+K/ZqRd5dLjauZM4ZtIWddNMCuvRu5Zc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataAccessLayer.dll" size="67584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataAccessLayer.dll" size="68608">
       <assemblyIdentity name="DataAccessLayer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>s03aCdn2pDIWwxosM2Fl/f/MqrXRSSAJrTDOpQpS3Zs=</dsig:DigestValue>
+        <dsig:DigestValue>/ybEsSe/veSZ5O3N3K++dgMvLQA34GkscMx8JhT6+AA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1554,14 +1554,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Quanlyhocsinh.exe" size="142760">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Quanlyhocsinh.exe" size="157096">
       <assemblyIdentity name="Quanlyhocsinh" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dGuy9kxbDH41Y7L64E54yShm6W3biYq1kvhXthHwpVE=</dsig:DigestValue>
+        <dsig:DigestValue>dXhySdvzodtTmTcWwgztRdh4vL7tPMuf1DiHw+HhPHo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

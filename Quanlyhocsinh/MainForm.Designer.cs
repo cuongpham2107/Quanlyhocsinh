@@ -132,7 +132,7 @@
             this.ribbonPage2,
             this.ribbonPage4,
             this.ribbonPage5});
-            this.ribbon.Size = new System.Drawing.Size(1254, 156);
+            this.ribbon.Size = new System.Drawing.Size(1327, 156);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // mnBackup
@@ -215,7 +215,9 @@
             this.mnTrinhDo.Caption = "Trình Độ";
             this.mnTrinhDo.Id = 12;
             this.mnTrinhDo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("mnTrinhDo.ImageOptions.SvgImage")));
+            this.mnTrinhDo.LargeWidth = 60;
             this.mnTrinhDo.Name = "mnTrinhDo";
+            this.mnTrinhDo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnTrinhDo_ItemClick);
             // 
             // mnChucVu
             // 
@@ -223,6 +225,7 @@
             this.mnChucVu.Id = 13;
             this.mnChucVu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("mnChucVu.ImageOptions.SvgImage")));
             this.mnChucVu.Name = "mnChucVu";
+            this.mnChucVu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnChucVu_ItemClick);
             // 
             // mnViPham
             // 
@@ -236,6 +239,7 @@
             this.mnLoaiViPham.Caption = "Loại Vi Phạm";
             this.mnLoaiViPham.Id = 15;
             this.mnLoaiViPham.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("mnLoaiViPham.ImageOptions.SvgImage")));
+            this.mnLoaiViPham.LargeWidth = 60;
             this.mnLoaiViPham.Name = "mnLoaiViPham";
             // 
             // mnMonHoc
@@ -466,7 +470,7 @@
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1254, 32);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1327, 32);
             // 
             // documentManager1
             // 
@@ -480,7 +484,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1254, 553);
+            this.ClientSize = new System.Drawing.Size(1327, 553);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.IsMdiContainer = true;

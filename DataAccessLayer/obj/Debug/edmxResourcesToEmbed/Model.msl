@@ -4,6 +4,8 @@
     <EntitySetMapping Name="tbl_ChucVu">
       <EntityTypeMapping TypeName="QuanlyModel.tbl_ChucVu">
         <MappingFragment StoreEntitySet="tbl_ChucVu">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
           <ScalarProperty Name="TenCV" ColumnName="TenCV" />
           <ScalarProperty Name="MaCV" ColumnName="MaCV" />
         </MappingFragment>
@@ -178,6 +180,8 @@
     <EntitySetMapping Name="tbl_TrinhDo">
       <EntityTypeMapping TypeName="QuanlyModel.tbl_TrinhDo">
         <MappingFragment StoreEntitySet="tbl_TrinhDo">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
           <ScalarProperty Name="TenTD" ColumnName="TenTD" />
           <ScalarProperty Name="MaTD" ColumnName="MaTD" />
         </MappingFragment>

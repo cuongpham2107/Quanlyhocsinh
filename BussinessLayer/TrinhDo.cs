@@ -36,21 +36,36 @@ namespace BussinessLayer
                 throw new Exception("Lỗi :"+e.Message);
             }
         }
-        //public tbl_TrinhDo Update(tbl_TrinhDo td)
-        //{
-        //    try
-        //    {
-        //        var data = db.tbl_TrinhDo.FirstOrDefault(x => x.MaTD == td.MaTD);
-                
-        //        data.TenTD = td.TenTD;
-        //        data.UpdatedBy = td.Upda
+        public tbl_TrinhDo Update(tbl_TrinhDo td)
+        {
+            try
+            {
+                var data = db.tbl_TrinhDo.FirstOrDefault(x => x.MaTD == td.MaTD);
+                data.TenTD = td.TenTD;
+                db.SaveChanges();
+                return td;
 
-        //    }
-        //    catch (Exception e)
-        //    {
+            }
+            catch (Exception e)
+            {
 
-        //        throw new Exception("Lỗi :"+e.Message);
-        //    }
-        //}
+                throw new Exception("Lỗi :" + e.Message);
+            }
+        }
+        public void Delete(int maTd, int UserID)
+        {
+            try
+            {
+                var data = db.tbl_TrinhDo.FirstOrDefault(x => x.MaTD == maTd);
+                data.DeletedBy = UserID;
+                data.DeletedDate = DateTime.Now;
+                db.SaveChanges();
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception("Lỗi :" + e.Message);
+            }
+        }
     }
 }

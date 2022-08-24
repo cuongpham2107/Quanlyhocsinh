@@ -6,6 +6,8 @@
     </Key>
     <Property Name="MaCV" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenCV" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
   <EntityType Name="tbl_DanhMucLoi">
     <Key>
@@ -169,6 +171,8 @@
     </Key>
     <Property Name="MaTD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenTD" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
   <EntityType Name="tbl_Truong">
     <Key>

@@ -223,6 +223,7 @@
             // 
             this.splitContainer1.Panel1.Controls.Add(this.txtTenTD);
             this.splitContainer1.Panel1.Controls.Add(this.labelControl1);
+            
             // 
             // splitContainer1.Panel2
             // 
@@ -233,14 +234,14 @@
             // 
             // txtTenTD
             // 
-            this.txtTenTD.Location = new System.Drawing.Point(156, 40);
+            this.txtTenTD.Location = new System.Drawing.Point(104, 42);
             this.txtTenTD.Name = "txtTenTD";
             this.txtTenTD.Size = new System.Drawing.Size(280, 23);
             this.txtTenTD.TabIndex = 1;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(75, 43);
+            this.labelControl1.Location = new System.Drawing.Point(23, 45);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(70, 16);
             this.labelControl1.TabIndex = 0;
@@ -317,6 +318,7 @@
             this.Controls.Add(this.barDockControl1);
             this.Name = "formTrinhDo";
             this.Text = "formTrinhDo";
+            this.Load += new System.EventHandler(this.formTrinhDo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();

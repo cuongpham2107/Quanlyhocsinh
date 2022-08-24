@@ -11,6 +11,8 @@
           </Key>
           <Property Name="MaCV" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TenCV" Type="nvarchar" MaxLength="50" />
+          <Property Name="DeletedBy" Type="int" />
+          <Property Name="DeletedDate" Type="datetime" />
         </EntityType>
         <EntityType Name="tbl_DanhMucLoi">
           <Key>
@@ -174,6 +176,8 @@
           </Key>
           <Property Name="MaTD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TenTD" Type="nvarchar" MaxLength="50" />
+          <Property Name="DeletedBy" Type="int" />
+          <Property Name="DeletedDate" Type="datetime" />
         </EntityType>
         <EntityType Name="tbl_Truong">
           <Key>
@@ -283,6 +287,8 @@
           </Key>
           <Property Name="MaCV" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TenCV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DeletedBy" Type="Int32" />
+          <Property Name="DeletedDate" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="tbl_DanhMucLoi">
           <Key>
@@ -446,6 +452,8 @@
           </Key>
           <Property Name="MaTD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TenTD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DeletedBy" Type="Int32" />
+          <Property Name="DeletedDate" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="tbl_Truong">
           <Key>
@@ -518,6 +526,8 @@
           <EntitySetMapping Name="tbl_ChucVu">
             <EntityTypeMapping TypeName="QuanlyModel.tbl_ChucVu">
               <MappingFragment StoreEntitySet="tbl_ChucVu">
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
                 <ScalarProperty Name="TenCV" ColumnName="TenCV" />
                 <ScalarProperty Name="MaCV" ColumnName="MaCV" />
               </MappingFragment>
@@ -692,6 +702,8 @@
           <EntitySetMapping Name="tbl_TrinhDo">
             <EntityTypeMapping TypeName="QuanlyModel.tbl_TrinhDo">
               <MappingFragment StoreEntitySet="tbl_TrinhDo">
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
                 <ScalarProperty Name="TenTD" ColumnName="TenTD" />
                 <ScalarProperty Name="MaTD" ColumnName="MaTD" />
               </MappingFragment>

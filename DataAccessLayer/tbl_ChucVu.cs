@@ -22,6 +22,10 @@ public partial class tbl_ChucVu
 
     public string TenCV { get; set; }
 
+    public Nullable<int> DeletedBy { get; set; }
+
+    public Nullable<System.DateTime> DeletedDate { get; set; }
+
 }
 
 }

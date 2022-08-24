@@ -24,6 +24,8 @@
     </Key>
     <Property Name="MaCV" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenCV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="tbl_DanhMucLoi">
     <Key>
@@ -187,6 +189,8 @@
     </Key>
     <Property Name="MaTD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenTD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="tbl_Truong">
     <Key>
