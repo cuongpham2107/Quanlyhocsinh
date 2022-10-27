@@ -187,6 +187,7 @@
             this.mnHocSinh.Id = 8;
             this.mnHocSinh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("mnHocSinh.ImageOptions.SvgImage")));
             this.mnHocSinh.Name = "mnHocSinh";
+            this.mnHocSinh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnHocSinh_ItemClick);
             // 
             // mnDanToc
             // 
@@ -194,6 +195,7 @@
             this.mnDanToc.Id = 9;
             this.mnDanToc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("mnDanToc.ImageOptions.SvgImage")));
             this.mnDanToc.Name = "mnDanToc";
+            this.mnDanToc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnDanToc_ItemClick);
             // 
             // mnTonGiao
             // 
@@ -271,6 +273,7 @@
             this.mnLop.Id = 19;
             this.mnLop.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("mnLop.ImageOptions.SvgImage")));
             this.mnLop.Name = "mnLop";
+            this.mnLop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnLop_ItemClick);
             // 
             // mnKhoiLop
             // 

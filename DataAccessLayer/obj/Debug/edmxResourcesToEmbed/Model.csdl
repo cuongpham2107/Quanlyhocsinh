@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="QuanlyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="QuanlyhocsinhModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityContainer Name="QuanlyEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="tbl_ChucVu" EntityType="QuanlyModel.tbl_ChucVu" />
-    <EntitySet Name="tbl_DanhMucLoi" EntityType="QuanlyModel.tbl_DanhMucLoi" />
-    <EntitySet Name="tbl_DanToc" EntityType="QuanlyModel.tbl_DanToc" />
-    <EntitySet Name="tbl_GiaoVien" EntityType="QuanlyModel.tbl_GiaoVien" />
-    <EntitySet Name="tbl_GiaoVien_Lop" EntityType="QuanlyModel.tbl_GiaoVien_Lop" />
-    <EntitySet Name="tbl_HocKy" EntityType="QuanlyModel.tbl_HocKy" />
-    <EntitySet Name="tbl_HocSinh" EntityType="QuanlyModel.tbl_HocSinh" />
-    <EntitySet Name="tbl_KetQua" EntityType="QuanlyModel.tbl_KetQua" />
-    <EntitySet Name="tbl_Lop" EntityType="QuanlyModel.tbl_Lop" />
-    <EntitySet Name="tbl_MonHoc" EntityType="QuanlyModel.tbl_MonHoc" />
-    <EntitySet Name="tbl_NamHoc" EntityType="QuanlyModel.tbl_NamHoc" />
-    <EntitySet Name="tbl_TrinhDo" EntityType="QuanlyModel.tbl_TrinhDo" />
-    <EntitySet Name="tbl_Truong" EntityType="QuanlyModel.tbl_Truong" />
-    <EntitySet Name="tbl_User" EntityType="QuanlyModel.tbl_User" />
-    <EntitySet Name="tbl_ViPham" EntityType="QuanlyModel.tbl_ViPham" />
-    <EntitySet Name="tbl_ViPham_CT" EntityType="QuanlyModel.tbl_ViPham_CT" />
+    <EntitySet Name="tbl_ChucVu" EntityType="QuanlyhocsinhModel.tbl_ChucVu" />
+    <EntitySet Name="tbl_DanToc" EntityType="QuanlyhocsinhModel.tbl_DanToc" />
+    <EntitySet Name="tbl_DanhMucLoi" EntityType="QuanlyhocsinhModel.tbl_DanhMucLoi" />
+    <EntitySet Name="tbl_GiaoVien" EntityType="QuanlyhocsinhModel.tbl_GiaoVien" />
+    <EntitySet Name="tbl_GiaoVien_Lop" EntityType="QuanlyhocsinhModel.tbl_GiaoVien_Lop" />
+    <EntitySet Name="tbl_HocKy" EntityType="QuanlyhocsinhModel.tbl_HocKy" />
+    <EntitySet Name="tbl_HocSinh" EntityType="QuanlyhocsinhModel.tbl_HocSinh" />
+    <EntitySet Name="tbl_KetQua" EntityType="QuanlyhocsinhModel.tbl_KetQua" />
+    <EntitySet Name="tbl_Lop" EntityType="QuanlyhocsinhModel.tbl_Lop" />
+    <EntitySet Name="tbl_MonHoc" EntityType="QuanlyhocsinhModel.tbl_MonHoc" />
+    <EntitySet Name="tbl_NamHoc" EntityType="QuanlyhocsinhModel.tbl_NamHoc" />
+    <EntitySet Name="tbl_TrinhDo" EntityType="QuanlyhocsinhModel.tbl_TrinhDo" />
+    <EntitySet Name="tbl_Truong" EntityType="QuanlyhocsinhModel.tbl_Truong" />
+    <EntitySet Name="tbl_User" EntityType="QuanlyhocsinhModel.tbl_User" />
+    <EntitySet Name="tbl_ViPham" EntityType="QuanlyhocsinhModel.tbl_ViPham" />
+    <EntitySet Name="tbl_ViPham_CT" EntityType="QuanlyhocsinhModel.tbl_ViPham_CT" />
   </EntityContainer>
   <EntityType Name="tbl_ChucVu">
     <Key>
@@ -24,6 +24,15 @@
     </Key>
     <Property Name="MaCV" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenCV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_DanToc">
+    <Key>
+      <PropertyRef Name="MaDT" />
+    </Key>
+    <Property Name="MaDT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="DeletedBy" Type="Int32" />
     <Property Name="DeletedDate" Type="DateTime" Precision="3" />
   </EntityType>
@@ -41,13 +50,6 @@
     <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
     <Property Name="DeletedBy" Type="Int32" />
     <Property Name="DeletedDate" Type="DateTime" Precision="3" />
-  </EntityType>
-  <EntityType Name="tbl_DanToc">
-    <Key>
-      <PropertyRef Name="MaDT" />
-    </Key>
-    <Property Name="MaDT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="TenDT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="tbl_GiaoVien">
     <Key>
@@ -103,6 +105,7 @@
     <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Ten" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
     <Property Name="GioiTinh" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="HinhAnh" Type="Binary" MaxLength="Max" FixedLength="false" />
     <Property Name="DienThoai" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
     <Property Name="DiaChi" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="MaDT" Type="Int32" />
@@ -147,7 +150,7 @@
     <Property Name="TenLop" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="SapXep" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
-    <Property Name="MaTruong" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="MaTruong" Type="Int32" />
     <Property Name="CrearedBy" Type="Int32" />
     <Property Name="CreatedDate" Type="DateTime" Precision="3" />
     <Property Name="UpdatedBy" Type="Int32" />

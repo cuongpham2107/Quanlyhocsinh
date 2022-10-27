@@ -73,5 +73,20 @@ namespace Quanlyhocsinh
         {
             OpenForm(typeof(formTrinhDo));
         }
+
+        private void mnDanToc_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            OpenForm(typeof(formDanToc));
+        }
+
+        private void mnHocSinh_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            OpenForm(typeof(formHocsinh));
+        }
+
+        private void mnLop_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            OpenForm(typeof(formLopHoc));
+        }
     }
 }

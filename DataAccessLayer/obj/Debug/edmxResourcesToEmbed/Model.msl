@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="QuanlyModelStoreContainer" CdmEntityContainer="QuanlyEntities">
+  <EntityContainerMapping StorageEntityContainer="QuanlyhocsinhModelStoreContainer" CdmEntityContainer="QuanlyEntities">
     <EntitySetMapping Name="tbl_ChucVu">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_ChucVu">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_ChucVu">
         <MappingFragment StoreEntitySet="tbl_ChucVu">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -11,8 +11,18 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="tbl_DanToc">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_DanToc">
+        <MappingFragment StoreEntitySet="tbl_DanToc">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="TenDT" ColumnName="TenDT" />
+          <ScalarProperty Name="MaDT" ColumnName="MaDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="tbl_DanhMucLoi">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_DanhMucLoi">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_DanhMucLoi">
         <MappingFragment StoreEntitySet="tbl_DanhMucLoi">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -27,16 +37,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tbl_DanToc">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_DanToc">
-        <MappingFragment StoreEntitySet="tbl_DanToc">
-          <ScalarProperty Name="TenDT" ColumnName="TenDT" />
-          <ScalarProperty Name="MaDT" ColumnName="MaDT" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="tbl_GiaoVien">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_GiaoVien">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_GiaoVien">
         <MappingFragment StoreEntitySet="tbl_GiaoVien">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -60,7 +62,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_GiaoVien_Lop">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_GiaoVien_Lop">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_GiaoVien_Lop">
         <MappingFragment StoreEntitySet="tbl_GiaoVien_Lop">
           <ScalarProperty Name="MaHK" ColumnName="MaHK" />
           <ScalarProperty Name="MaNamHoc" ColumnName="MaNamHoc" />
@@ -71,7 +73,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_HocKy">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_HocKy">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_HocKy">
         <MappingFragment StoreEntitySet="tbl_HocKy">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -85,7 +87,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_HocSinh">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_HocSinh">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_HocSinh">
         <MappingFragment StoreEntitySet="tbl_HocSinh">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -100,6 +102,7 @@
           <ScalarProperty Name="MaDT" ColumnName="MaDT" />
           <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
           <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
           <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
           <ScalarProperty Name="Ten" ColumnName="Ten" />
           <ScalarProperty Name="HoTen" ColumnName="HoTen" />
@@ -108,7 +111,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_KetQua">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_KetQua">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_KetQua">
         <MappingFragment StoreEntitySet="tbl_KetQua">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -131,7 +134,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_Lop">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_Lop">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_Lop">
         <MappingFragment StoreEntitySet="tbl_Lop">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -148,7 +151,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_MonHoc">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_MonHoc">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_MonHoc">
         <MappingFragment StoreEntitySet="tbl_MonHoc">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -164,7 +167,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_NamHoc">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_NamHoc">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_NamHoc">
         <MappingFragment StoreEntitySet="tbl_NamHoc">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -178,7 +181,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_TrinhDo">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_TrinhDo">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_TrinhDo">
         <MappingFragment StoreEntitySet="tbl_TrinhDo">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -188,7 +191,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_Truong">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_Truong">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_Truong">
         <MappingFragment StoreEntitySet="tbl_Truong">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -206,7 +209,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_User">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_User">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_User">
         <MappingFragment StoreEntitySet="tbl_User">
           <ScalarProperty Name="Address" ColumnName="Address" />
           <ScalarProperty Name="Email" ColumnName="Email" />
@@ -221,7 +224,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_ViPham">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_ViPham">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_ViPham">
         <MappingFragment StoreEntitySet="tbl_ViPham">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
@@ -241,7 +244,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tbl_ViPham_CT">
-      <EntityTypeMapping TypeName="QuanlyModel.tbl_ViPham_CT">
+      <EntityTypeMapping TypeName="QuanlyhocsinhModel.tbl_ViPham_CT">
         <MappingFragment StoreEntitySet="tbl_ViPham_CT">
           <ScalarProperty Name="NgayViPham" ColumnName="NgayViPham" />
           <ScalarProperty Name="MaHS" ColumnName="MaHS" />

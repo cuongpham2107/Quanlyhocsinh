@@ -1,5 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="QuanlyhocsinhModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_ChucVu">
+    <Key>
+      <PropertyRef Name="MaCV" />
+    </Key>
+    <Property Name="MaCV" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenCV" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_DanToc">
+    <Key>
+      <PropertyRef Name="MaDT" />
+    </Key>
+    <Property Name="MaDT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
   <EntityType Name="tbl_DanhMucLoi">
     <Key>
       <PropertyRef Name="MaLoi" />
@@ -8,11 +26,12 @@
     <Property Name="TenLoi" Type="nvarchar" MaxLength="50" />
     <Property Name="Diem" Type="nvarchar" MaxLength="20" />
     <Property Name="GhiChu" Type="text" />
-    <Property Name="Status" Type="nvarchar" MaxLength="20" />
-    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CrearedBy" Type="int" />
     <Property Name="CreatedDate" Type="datetime" />
     <Property Name="UpdatedBy" Type="int" />
     <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
   <EntityType Name="tbl_GiaoVien">
     <Key>
@@ -21,10 +40,21 @@
     <Property Name="MaGV" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
     <Property Name="Ten" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgaySinh" Type="date" />
+    <Property Name="GioiTinh" Type="int" />
+    <Property Name="HinhAnh" Type="varbinary(max)" />
     <Property Name="DienThoai" Type="nvarchar" MaxLength="50" />
     <Property Name="Email" Type="nvarchar" MaxLength="50" />
     <Property Name="DiaChi" Type="nvarchar" MaxLength="250" />
-    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaCV" Type="int" />
+    <Property Name="MaDT" Type="int" />
+    <Property Name="MaTD" Type="int" />
+    <Property Name="CrearedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
   <EntityType Name="tbl_GiaoVien_Lop">
     <Key>
@@ -42,6 +72,12 @@
     </Key>
     <Property Name="MaHK" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenHK" Type="nvarchar" MaxLength="50" />
+    <Property Name="CrearedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
   <EntityType Name="tbl_HocSinh">
     <Key>
@@ -51,6 +87,7 @@
     <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
     <Property Name="Ten" Type="nvarchar" MaxLength="30" />
     <Property Name="GioiTinh" Type="nvarchar" MaxLength="30" />
+    <Property Name="HinhAnh" Type="varbinary(max)" />
     <Property Name="DienThoai" Type="nvarchar" MaxLength="30" />
     <Property Name="DiaChi" Type="nvarchar" MaxLength="250" />
     <Property Name="MaDT" Type="int" />
@@ -58,10 +95,12 @@
     <Property Name="MaLop" Type="int" />
     <Property Name="GhiChu" Type="text" />
     <Property Name="DaNghiHoc" Type="bit" />
+    <Property Name="CrearedBy" Type="int" />
     <Property Name="CreatedDate" Type="datetime" />
-    <Property Name="CreatedBy" Type="int" />
-    <Property Name="UpdatedDate" Type="datetime" />
     <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
   <EntityType Name="tbl_KetQua">
     <Key>
@@ -78,10 +117,12 @@
     <Property Name="MaNamHoc" Type="int" />
     <Property Name="MaHocKy" Type="int" />
     <Property Name="MaLop" Type="int" />
-    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CrearedBy" Type="int" />
     <Property Name="CreatedDate" Type="datetime" />
     <Property Name="UpdatedBy" Type="int" />
     <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
   <EntityType Name="tbl_Lop">
     <Key>
@@ -92,6 +133,12 @@
     <Property Name="GhiChu" Type="text" />
     <Property Name="SapXep" Type="nvarchar" MaxLength="250" />
     <Property Name="MaTruong" Type="nvarchar" MaxLength="250" />
+    <Property Name="CrearedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
   <EntityType Name="tbl_MonHoc">
     <Key>
@@ -99,7 +146,14 @@
     </Key>
     <Property Name="MaMH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenMH" Type="nvarchar" MaxLength="50" />
-    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="HeSo" Type="int" />
+    <Property Name="SoTiet" Type="int" />
+    <Property Name="CrearedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
   <EntityType Name="tbl_NamHoc">
     <Key>
@@ -107,6 +161,29 @@
     </Key>
     <Property Name="MaNamHoc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenNamHoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="CrearedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'Quanlyhocsinh.dbo.tbl_TonGiao' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="tbl_TonGiao">
+          <Property Name="MaTG" Type="int" />
+          <Property Name="TenTG" Type="nvarchar" MaxLength="50" />
+          <Property Name="DeletedBy" Type="int" />
+          <Property Name="DeletedDate" Type="datetime" />
+        </EntityType>-->
+  <EntityType Name="tbl_TrinhDo">
+    <Key>
+      <PropertyRef Name="MaTD" />
+    </Key>
+    <Property Name="MaTD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenTD" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
   <EntityType Name="tbl_Truong">
     <Key>
@@ -118,6 +195,12 @@
     <Property Name="DienThoai" Type="nvarchar" MaxLength="30" />
     <Property Name="DiaChi" Type="nvarchar" MaxLength="250" />
     <Property Name="Website" Type="nvarchar" MaxLength="50" />
+    <Property Name="CrearedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
   <EntityType Name="tbl_User">
     <Key>
@@ -145,7 +228,7 @@
     <Property Name="MaNamHoc" Type="int" />
     <Property Name="MaHK" Type="int" />
     <Property Name="GhiChu" Type="text" />
-    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CrearedBy" Type="int" />
     <Property Name="CreatedDate" Type="datetime" />
     <Property Name="UpdatedBy" Type="int" />
     <Property Name="UpdatedDate" Type="datetime" />
@@ -165,6 +248,8 @@
     <Property Name="NgayViPham" Type="datetime" />
   </EntityType>
   <EntityContainer Name="QuanlyhocsinhModelStoreContainer">
+    <EntitySet Name="tbl_ChucVu" EntityType="Self.tbl_ChucVu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_DanToc" EntityType="Self.tbl_DanToc" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_DanhMucLoi" EntityType="Self.tbl_DanhMucLoi" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_GiaoVien" EntityType="Self.tbl_GiaoVien" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_GiaoVien_Lop" EntityType="Self.tbl_GiaoVien_Lop" Schema="dbo" store:Type="Tables" />
@@ -174,6 +259,7 @@
     <EntitySet Name="tbl_Lop" EntityType="Self.tbl_Lop" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_MonHoc" EntityType="Self.tbl_MonHoc" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_NamHoc" EntityType="Self.tbl_NamHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_TrinhDo" EntityType="Self.tbl_TrinhDo" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_Truong" EntityType="Self.tbl_Truong" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_User" EntityType="Self.tbl_User" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_ViPham" EntityType="Self.tbl_ViPham" Schema="dbo" store:Type="Tables" />

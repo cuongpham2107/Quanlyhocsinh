@@ -4,23 +4,23 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="630f2a998a1a428e82f135f1d6fb8a65" Name="Diagram1">
-        <EntityTypeShape EntityType="QuanlyModel.tbl_ChucVu" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_DanhMucLoi" Width="1.5" PointX="2.75" PointY="0.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_DanToc" Width="1.5" PointX="4.75" PointY="0.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_GiaoVien" Width="1.5" PointX="0.75" PointY="4.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_GiaoVien_Lop" Width="1.5" PointX="2.75" PointY="4.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_HocKy" Width="1.5" PointX="4.75" PointY="3.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_HocSinh" Width="1.5" PointX="6.75" PointY="0.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_KetQua" Width="1.5" PointX="6.75" PointY="6.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_Lop" Width="1.5" PointX="2.75" PointY="7.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_MonHoc" Width="1.5" PointX="8.75" PointY="0.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_NamHoc" Width="1.5" PointX="8.75" PointY="4.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_TrinhDo" Width="1.5" PointX="8.75" PointY="8.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_Truong" Width="1.5" PointX="10.75" PointY="0.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_User" Width="1.5" PointX="10.75" PointY="5.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_ViPham" Width="1.5" PointX="10.75" PointY="9.75" />
-        <EntityTypeShape EntityType="QuanlyModel.tbl_ViPham_CT" Width="1.5" PointX="0.75" PointY="11.75" />
+      <Diagram DiagramId="b93531ad4c6f435dabe2f63a2bbe3464" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_ChucVu" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_DanToc" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_DanhMucLoi" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_GiaoVien" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_GiaoVien_Lop" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_HocKy" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_HocSinh" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_KetQua" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_Lop" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_MonHoc" Width="1.5" PointX="8.75" PointY="4.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_NamHoc" Width="1.5" PointX="8.75" PointY="8.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_TrinhDo" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_Truong" Width="1.5" PointX="2.75" PointY="9.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_User" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_ViPham" Width="1.5" PointX="10.75" PointY="4.75" />
+        <EntityTypeShape EntityType="QuanlyhocsinhModel.tbl_ViPham_CT" Width="1.5" PointX="10.75" PointY="9.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -64,11 +64,9 @@
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gcDanhSach = new DevExpress.XtraGrid.GridControl();
-            this.gvDanhSach = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.DeletedBy = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaGV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.HoTen = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GioiTinh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NgaySinh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TenTD = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TenCV = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -76,6 +74,7 @@
             this.Email = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.HinhAnh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gvDanhSach = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -417,26 +416,6 @@
             this.gcDanhSach.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvDanhSach});
             // 
-            // gvDanhSach
-            // 
-            this.gvDanhSach.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.DeletedBy,
-            this.MaGV,
-            this.HoTen,
-            this.GioiTinh,
-            this.NgaySinh,
-            this.TenTD,
-            this.TenCV,
-            this.DienThoai,
-            this.Email,
-            this.DiaChi,
-            this.HinhAnh});
-            this.gvDanhSach.GridControl = this.gcDanhSach;
-            this.gvDanhSach.Name = "gvDanhSach";
-            this.gvDanhSach.OptionsView.ShowGroupPanel = false;
-            this.gvDanhSach.CustomDrawCell += new DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler(this.gvDanhSach_CustomDrawCell);
-            this.gvDanhSach.Click += new System.EventHandler(this.gvDanhSach_Click);
-            // 
             // DeletedBy
             // 
             this.DeletedBy.Caption = " ";
@@ -474,18 +453,6 @@
             this.HoTen.VisibleIndex = 2;
             this.HoTen.Width = 200;
             // 
-            // GioiTinh
-            // 
-            this.GioiTinh.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.GioiTinh.AppearanceHeader.Options.UseFont = true;
-            this.GioiTinh.Caption = "Giới Tính";
-            this.GioiTinh.FieldName = "GioiTinh";
-            this.GioiTinh.MinWidth = 50;
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Visible = true;
-            this.GioiTinh.VisibleIndex = 3;
-            this.GioiTinh.Width = 60;
-            // 
             // NgaySinh
             // 
             this.NgaySinh.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
@@ -495,7 +462,7 @@
             this.NgaySinh.MinWidth = 50;
             this.NgaySinh.Name = "NgaySinh";
             this.NgaySinh.Visible = true;
-            this.NgaySinh.VisibleIndex = 4;
+            this.NgaySinh.VisibleIndex = 3;
             this.NgaySinh.Width = 98;
             // 
             // TenTD
@@ -506,7 +473,7 @@
             this.TenTD.FieldName = "TenTD";
             this.TenTD.Name = "TenTD";
             this.TenTD.Visible = true;
-            this.TenTD.VisibleIndex = 5;
+            this.TenTD.VisibleIndex = 4;
             this.TenTD.Width = 115;
             // 
             // TenCV
@@ -517,7 +484,7 @@
             this.TenCV.FieldName = "TenCV";
             this.TenCV.Name = "TenCV";
             this.TenCV.Visible = true;
-            this.TenCV.VisibleIndex = 6;
+            this.TenCV.VisibleIndex = 5;
             this.TenCV.Width = 106;
             // 
             // DienThoai
@@ -528,7 +495,7 @@
             this.DienThoai.FieldName = "DienThoai";
             this.DienThoai.Name = "DienThoai";
             this.DienThoai.Visible = true;
-            this.DienThoai.VisibleIndex = 7;
+            this.DienThoai.VisibleIndex = 6;
             this.DienThoai.Width = 118;
             // 
             // Email
@@ -539,7 +506,7 @@
             this.Email.FieldName = "Email";
             this.Email.Name = "Email";
             this.Email.Visible = true;
-            this.Email.VisibleIndex = 8;
+            this.Email.VisibleIndex = 7;
             this.Email.Width = 165;
             // 
             // DiaChi
@@ -550,7 +517,7 @@
             this.DiaChi.FieldName = "DiaChi";
             this.DiaChi.Name = "DiaChi";
             this.DiaChi.Visible = true;
-            this.DiaChi.VisibleIndex = 9;
+            this.DiaChi.VisibleIndex = 8;
             this.DiaChi.Width = 263;
             // 
             // HinhAnh
@@ -561,8 +528,27 @@
             this.HinhAnh.FieldName = "HinhAnh";
             this.HinhAnh.Name = "HinhAnh";
             this.HinhAnh.Visible = true;
-            this.HinhAnh.VisibleIndex = 10;
+            this.HinhAnh.VisibleIndex = 9;
             this.HinhAnh.Width = 134;
+            // 
+            // gvDanhSach
+            // 
+            this.gvDanhSach.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.DeletedBy,
+            this.MaGV,
+            this.HoTen,
+            this.NgaySinh,
+            this.TenTD,
+            this.TenCV,
+            this.DienThoai,
+            this.Email,
+            this.DiaChi,
+            this.HinhAnh});
+            this.gvDanhSach.GridControl = this.gcDanhSach;
+            this.gvDanhSach.Name = "gvDanhSach";
+            this.gvDanhSach.OptionsView.ShowGroupPanel = false;
+            this.gvDanhSach.CustomDrawCell += new DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler(this.gvDanhSach_CustomDrawCell);
+            this.gvDanhSach.Click += new System.EventHandler(this.gvDanhSach_Click);
             // 
             // formGiaoVien
             // 
@@ -624,11 +610,12 @@
         private System.Windows.Forms.TextBox txtHoTen;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraGrid.GridControl gcDanhSach;
+        private System.Windows.Forms.ComboBox cbbTrinhDo;
+        private System.Windows.Forms.ComboBox cbbChucVu;
         private DevExpress.XtraGrid.Views.Grid.GridView gvDanhSach;
         private DevExpress.XtraGrid.Columns.GridColumn DeletedBy;
         private DevExpress.XtraGrid.Columns.GridColumn MaGV;
         private DevExpress.XtraGrid.Columns.GridColumn HoTen;
-        private DevExpress.XtraGrid.Columns.GridColumn GioiTinh;
         private DevExpress.XtraGrid.Columns.GridColumn NgaySinh;
         private DevExpress.XtraGrid.Columns.GridColumn TenTD;
         private DevExpress.XtraGrid.Columns.GridColumn TenCV;
@@ -636,7 +623,5 @@
         private DevExpress.XtraGrid.Columns.GridColumn Email;
         private DevExpress.XtraGrid.Columns.GridColumn DiaChi;
         private DevExpress.XtraGrid.Columns.GridColumn HinhAnh;
-        private System.Windows.Forms.ComboBox cbbTrinhDo;
-        private System.Windows.Forms.ComboBox cbbChucVu;
     }
 }
